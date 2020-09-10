@@ -20,7 +20,7 @@ public class H052 extends Applet {
         hans = 84;
         Valerie = 124;
         //Kijk rij 32 tot en met 37. 100-100kg en 0-0kg y waarde invullen achter het desbetreffende persoon
-        
+
         CValerie = Color.red;
         CJeroen = Color.green;
         CHans = Color.blue;
