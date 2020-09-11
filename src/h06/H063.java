@@ -14,6 +14,8 @@ public class H063 extends Applet {
         c = 6.9;
         d = 3;
         uitkomst = (a + b + c) / d;
+        uitkomst = (int)(uitkomst*10);
+        uitkomst = uitkomst /10;
     }
 
     public void paint(Graphics g) {
