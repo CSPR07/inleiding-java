@@ -1,4 +1,22 @@
 package h06;
 
-public class H063 {
+import java.awt.*;
+import java.applet.*;
+
+
+public class H063 extends Applet {
+    double a, b, c, d, uitkomst;
+
+
+    public void init() {
+        a = 5.9;
+        b = 6.3;
+        c = 6.9;
+        d = 3;
+        uitkomst = (a + b + c) / d;
+    }
+
+    public void paint(Graphics g) {
+        g.drawString("het gemiddelde is: " + uitkomst, 20, 20);
+    }
 }
