@@ -40,7 +40,7 @@ public class H084 extends Applet{
     public void paint(Graphics g) {
         g.drawString(String.valueOf(uitkomst), 50, 60 );
     }
-    
+
     class plus implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             q = tekstvak1.getText();
