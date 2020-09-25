@@ -15,10 +15,9 @@ public class H123 extends Applet{
 
     Button knop1;
 
-    String[] cijfers = {"1", "2", "3", "4", "5"};
+    int[] cijfers = {1, 2, 3, 4, 5};
 
     public void init(){
-        Arrays.sort(cijfers);
 
         tekstvak1 = new TextField("", 40);
         tekstvak2 = new TextField("", 40);
@@ -46,6 +45,35 @@ public class H123 extends Applet{
 
     private class Knopje implements ActionListener {
         public void actionPerformed(ActionEvent e) {
+            String s;
+            int p;
+            s = tekstvak1.getText();
+            p = (int) Double.parseDouble(s);
+            cijfers[0]=p;
+
+            s = tekstvak2.getText();
+            p = (int) Double.parseDouble(s);
+            cijfers[1]=p;
+
+            s = tekstvak3.getText();
+            p = (int) Double.parseDouble(s);
+            cijfers[2]=p;
+
+            s = tekstvak4.getText();
+            p = Integer.parseInt(s);
+            cijfers[3]=p;
+
+            s = tekstvak5.getText();
+            p = (int) Double.parseDouble(s);
+            cijfers[4]=p;
+
+            Arrays.sort(cijfers);
+
+            tekstvak1.setText( cijfers[0] +"");
+            tekstvak2.setText( cijfers[1] +"");
+            tekstvak3.setText( cijfers[2] +"");
+            tekstvak4.setText( cijfers[3] +"");
+            tekstvak5.setText( cijfers[4] +"");
             repaint();
         }
     }
