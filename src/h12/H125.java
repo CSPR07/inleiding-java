@@ -4,7 +4,7 @@ import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class H124 extends Applet{
+public class H125 extends Applet{
 
     Button ok = new Button("Ok");
 
@@ -45,9 +45,11 @@ public class H124 extends Applet{
                 if (nummer == getallen[i]) {
                     index = i;
                     controle = true;
+                    break;
                 }
             }
             repaint();
         }
     }
 }
+
