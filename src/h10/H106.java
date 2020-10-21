@@ -19,6 +19,7 @@ public class H106 extends Applet{
         ok.addActionListener( Kl );
 
         tekstvak = new TextField("", 4);
+        tekstvak.addActionListener( Kl );
         tekst ="";
 
         label = new Label("Voer je cijfer in en dan weet je of je een voldoende hebt of niet");
@@ -40,7 +41,10 @@ public class H106 extends Applet{
 
             s = tekstvak.getText();
             cijfer = Integer.parseInt( s );
-            if ( cijfer < 4 ) {
+            if (cijfer <= 0 ) {
+                tekst = "Dit kan niet het moet tussen de 1 en de 10 zijn";
+            }
+            else if ( cijfer < 4 ) {
                 tekst = "je hebt een super slecht cijfer gehaald! ";
             }
 
@@ -52,11 +56,7 @@ public class H106 extends Applet{
                 tekst = "je hebt een matig cijfer gehaald";
             }
 
-            if ( cijfer == 6 ) {
-                tekst = "je hebt een voldoende gehaald";
-            }
-
-            if ( cijfer == 7 ) {
+            if ( cijfer == 6 || cijfer == 7 ) {
                 tekst = "je hebt een voldoende gehaald";
             }
 

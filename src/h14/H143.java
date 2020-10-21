@@ -81,7 +81,7 @@ public class H143 extends Applet {
 
 
         //code voor het eerste pad
-        }else if(smileys == 21 || smileys == 17 || smileys == 13 || smileys == 9|| smileys == 5) {
+        }else if(smileys %4 == 1) {
             switch(userplay) {
                 case 1:
                     botplays = 3;
@@ -95,7 +95,7 @@ public class H143 extends Applet {
             }
 
         //code voor het tweede pad
-        }else if(smileys == 20 || smileys == 16 || smileys == 12 || smileys == 8|| smileys == 4){
+        }else if(smileys %4 == 0){
             switch(userplay) {
                 case 1:
                     botplays = 2;
@@ -109,7 +109,7 @@ public class H143 extends Applet {
             }
 
         //code voor het derde pad
-        }else if(smileys == 19 || smileys == 15 || smileys == 11 || smileys == 7|| smileys == 3){
+        }else if(smileys %4 == 3){
             switch(userplay) {
                 case 1:
                     botplays = 1;
@@ -123,7 +123,7 @@ public class H143 extends Applet {
             }
 
         //code voor het vierde pad
-        }else if(smileys == 18 || smileys == 14 || smileys == 10 || smileys == 6|| smileys == 2){
+        }else if(smileys %4 == 2){
             switch(userplay) {
                 case 1:
                     botplays = r;
@@ -176,8 +176,8 @@ public class H143 extends Applet {
 
 
 
-            if(match==true) {
-                if(verloren == false) {
+            if(match) {
+                if(!verloren) {
                     tekst1 = "Victory Royale!";
                 }else {
                     tekst1 = "n00b!!";
