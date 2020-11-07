@@ -12,8 +12,8 @@ public class h4kleurtjes extends Applet{
 
     public void paint(Graphics g) {
         g.setColor(Color.yellow);
-        g.drawRect(20,20,100,100);
-        g.fillRect(20, 20, 100, 100);
+        g.drawRect(20,20,200,100);
+        g.fillRect(20, 20, 200, 100);
     }
 
 
